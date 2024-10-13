@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+header {
+    background-color: #002366;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+}
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+.about-cctp, .services-infographic, .recruiter-message, .cctp-members, .success-stories, .placement-stats, .upcoming-events, .resources, .contact-info {
+    margin-bottom: 50px;
+}
+h2 {
+    color: #002366;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.infographic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.infographic div {
+    flex: 1;
+    min-width: 250px;
+    background: #e6f2ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.recruiter-message {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.recruiter-message img {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.cctp-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.member-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.member-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.carousel, .chart, .calendar{
+    text-align: left;
+    padding: 20px;
+    background: #e6f7ff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.resources {
+    text-align: left;
+    padding: 20px;
+    background: #e6f7ff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+@keyframes bringCloser {
+    from {
+        opacity: 0;
+        transform: translateZ(-100px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}
+.infographic div, .member-card, .cta-buttons button {
+    animation: bringCloser 1.5s ease-out;
+}
+.infographic div, .member-card, .cta-buttons button, .services-infographic div, .cctp-members .member-card {
+    animation: bringCloser 1.5s ease-out;
+}

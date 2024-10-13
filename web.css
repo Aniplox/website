@@ -1,0 +1,289 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+    overflow-x: hidden;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('DoonUni.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 50px;
+    text-align: center;
+    color: #f7f7f7;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.5s;
+}
+header h1 {
+    font-size: 4.5em;
+    text-shadow: 5px 5px 12px #000;
+    color: #fff;
+    animation: fadeInDown 2s ease;
+}
+header p {
+    color: #f7f7f7;
+    font-size: 1.8em;
+    font-weight: bold;
+    animation: fadeInUp 2s ease;
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav {
+    background-color: #001f3f;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #005599;
+    transform: scale(1.1);
+}
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 500px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: slideIn 1.2s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.login-section {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+.login-section h3 {
+    color: #001f3f;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+.login-buttons {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    justify-content: center;
+}
+.login-buttons a {
+    background-color: #001f3f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.login-buttons a:hover {
+    background-color: #005599;
+    transform: translateY(-8px);
+}
+.container {
+    padding: 60px 20px;
+    background-color: #e6f7ff;
+    transition: background-color 0.5s, color 0.5s;
+}
+.content {
+    margin: 50px auto;
+    padding: 50px;
+    background: #FAFAFA;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: transform 0.4s ease, background-color 0.5s, color 0.5s;
+    max-width: 1300px;
+}
+.content:hover {
+    transform: translateY(-15px);
+}
+.content h2 {
+    color: #001f3f;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+.content p {
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+footer {
+    background-color: #001f3f;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 80px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.brochure-link {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+}
+.brochure-link:hover {
+    text-decoration: underline;
+    color: #ffc107;
+}
+.flex-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #e6f2ff, #cce0ff);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: bringCloser 1.8s ease-out;
+}
+.box:hover {
+    transform: scale(1.05) translateZ(50px);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.4);
+}
+.box img {
+    width: 70px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.box strong {
+    font-size: 1.8em;
+    color: #002366;
+}
+.contact-info {
+    margin-top: 60px;
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+.contact-info h3 {
+    color: #001f3f;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.contact-info p {
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+.animated-box {
+    perspective: 1200px;
+}
+.box {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.dashboard-section {
+    margin-top: 60px;
+    background: #e0f0ff;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+.dashboard-section h3 {
+    color: #001f3f;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+.dashboard-metrics {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 30px;
+}
+.metric-box {
+    background: #FAFAFA;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.5s, color 0.5s;
+    flex: 1;
+}
+.metric-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+}
+.metric-box h4 {
+    color: #001f3f;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.metric-box p {
+    font-size: 2em;
+    font-weight: bold;
+}

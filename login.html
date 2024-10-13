@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal - Doon University</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <sc
+</head>
+<body>
+    <header>
+        Login Portal - Doon University
+    </header>
+
+    <div class="container">
+        <form class="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="user-type">Login as</label>
+            <select id="user-type" name="user-type">
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+                <option value="company">Recruiter</option>
+                <option value="company">Alumini</option>
+            </select>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>
